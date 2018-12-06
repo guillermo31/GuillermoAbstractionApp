@@ -12,7 +12,7 @@
         <!--Abstraction View Controller-->
         <scene sceneID="IuF-Yi-Qs3">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="hiK-15-Tv8" customClass="AbstractionViewController" customModule="GuillermoAbstractionApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="hiK-15-Tv8" customClass="AbstractionViewController" customModule="GuillermoAbstractionApp" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQ3-Fx-tVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-578" y="134"/>
@@ -25,11 +25,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="swift" translatesAutoresizingMaskIntoConstraints="NO" id="nXQ-8z-Oaz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swift" translatesAutoresizingMaskIntoConstraints="NO" id="nXQ-8z-Oaz">
                                 <rect key="frame" x="55" y="60" width="264" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZR-eT-rpa">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZR-eT-rpa">
                                 <rect key="frame" x="67" y="310" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">It deals with the complexities of creating software by masking the process with readable text. This is only less abstract than human languages.
 </string>
@@ -38,11 +40,6 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.68630586136113991" green="0.00097033284124089906" blue="0.097225353977195797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="KZR-eT-rpa" firstAttribute="top" secondItem="nXQ-8z-Oaz" secondAttribute="bottom" constant="70" id="G4p-wi-HF4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="width" secondItem="nXQ-8z-Oaz" secondAttribute="width" id="JKa-4G-OUH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="height" secondItem="nXQ-8z-Oaz" secondAttribute="height" id="P9a-IZ-LM2"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -58,11 +55,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="blocks" translatesAutoresizingMaskIntoConstraints="NO" id="w15-E3-JSm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blocks" translatesAutoresizingMaskIntoConstraints="NO" id="w15-E3-JSm">
                                 <rect key="frame" x="55" y="60" width="264" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mob-0x-cfI">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mob-0x-cfI">
                                 <rect key="frame" x="67" y="314" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text"> It deals with the complexities of creating software by using user-friendly graphics. This is only less abstract than human languages.
 </string>
@@ -71,11 +70,6 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.52538121734965504" blue="0.33720313359145215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Mob-0x-cfI" firstAttribute="top" secondItem="w15-E3-JSm" secondAttribute="bottom" constant="74" id="Aio-VL-b8T"/>
-                            <constraint firstItem="QBQ-5x-xc4" firstAttribute="height" secondItem="w15-E3-JSm" secondAttribute="height" id="cAz-4n-1DC"/>
-                            <constraint firstItem="QBQ-5x-xc4" firstAttribute="width" secondItem="w15-E3-JSm" secondAttribute="width" id="lKw-jc-1m5"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QBQ-5x-xc4"/>
                     </view>
                 </viewController>
@@ -174,9 +168,9 @@
     </scenes>
     <resources>
         <image name="binary" width="1920" height="1080"/>
-        <image name="blocks" width="510" height="500"/>
+        <image name="blocks" width="255" height="250"/>
         <image name="bytecode" width="640" height="202"/>
         <image name="logicGates" width="828" height="424"/>
-        <image name="swift" width="692" height="495"/>
+        <image name="swift" width="346" height="248"/>
     </resources>
 </document>
